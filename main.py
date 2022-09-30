@@ -54,7 +54,6 @@ def parse_cookie(query: str) -> dict:
     cookie = SimpleCookie()
     cookie.load(query)
     res = {k: v.value for k, v in cookie.items()}
-    print(res)
     return res
 
 
